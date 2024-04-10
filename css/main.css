@@ -21,6 +21,11 @@ body {
 .task-title {
   font-weight: 400;
   padding-top: 5px;
+  width: 90%
+}
+
+.task-title--done {
+  width: 90%;
 }
 .gray {
   color: #BDBDBD;
@@ -32,6 +37,11 @@ body {
 .task-item__buttons {
   display: flex;
   column-gap: 5px;
+  position: absolute;
+  right: 10px;
+}
+.list-group-item {
+  position: relative;
 }
 .notify-holder {
   height: 60px;
