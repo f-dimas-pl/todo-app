@@ -21,7 +21,8 @@ body {
 .task-title {
   font-weight: 400;
   padding-top: 5px;
-  width: 90%
+  width: 90%;
+  padding-right: 20px;
 }
 
 .task-title--done {
@@ -37,11 +38,23 @@ body {
 .task-item__buttons {
   display: flex;
   column-gap: 5px;
-  position: absolute;
+  /* position: absolute; */
   right: 10px;
 }
 .list-group-item {
   position: relative;
+  overflow-x: auto;
+}
+
+.list-group-item::-webkit-scrollbar {
+  width: 24px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #c3dfff;
+}
+
+.list-group-item::-webkit-scrollbar-thumb {
+  background-color: #8d85ff;
+  border-radius: 12px;
 }
 .notify-holder {
   height: 60px;
